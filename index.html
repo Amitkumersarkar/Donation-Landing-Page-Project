@@ -40,8 +40,8 @@
 
         <!-- Donation and History section -->
         <nav class="bg-white p-4 flex justify-center gap-8 mt-5">
-            <button class="btn btn-outline btn-primary p-2.5 font-semibold">Donation</button>
-            <button class="btn btn-outline btn-secondary font-semibold">History</button>
+            <button id="donationTab" class="btn btn-outline btn-primary p-2.5 font-semibold">Donation</button>
+            <button id="historyTab" class="btn btn-outline btn-secondary font-semibold">History</button>
         </nav>
     </header>
     <main id="content" class="p-5">
@@ -70,7 +70,7 @@
                             affected by this disaster. Every contribution, big or small, makes difference. Please join
                             us in supporting the relief efforts and making a positive impact on the lives of those in
                             need.</p>
-                        <input id="donation1" type="number" placeholder="Write Donation Amount"
+                        <input id="donation1" type="number" placeholder="Enter Your Donation Amount"
                             class="mt-2 p-2 border rounded w-full pb-5">
                         <button onclick="donate(1, 0)"
                             class="mt-2 bg-green-500 text-white font-semibold px-4 py-2 rounded">Donate
@@ -83,34 +83,33 @@
         <!-- Donation card-1 End-->
 
         <!-- Donation Card-2 Start -->
-        <div id="donationSection">
-            <div class="flex ml-96 pt-5 gap-2">
-                <div>
-                    <img src="./DOM-Quest-Build-and-Manipulate/assets/coin.png">
-                </div>
-                <div>
-                    0 BDT
-                </div>
-            </div>
 
-            <div class="bg-white p-4 shadow-md rounded mb-4">
-                <div class="flex gap-10">
-                    <img src="./DOM-Quest-Build-and-Manipulate/assets/feni.png" alt="Flood image"
-                        class="rounded w-80 h-72 object-cover">
-                    <div>
-                        <h3 class="font-bold pb-5">Donate for Flood Relief in Feni,Bangladesh</h3>
-                        <p class="text-sm text-gray-600 pb-5">The recent floods in Feni have devastated local
-                            communities, leading to severe disruption and loss. Your generous donation will help provide
-                            immediate aid, including food, clean water, and medical supplies, to those affected by this
-                            calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of
-                            this disaster. Every contribution counts towards making a real difference. Please consider
-                            donating today to assist those in urgent need.</p>
-                        <input id="donation1" type="number" placeholder="Write Donation Amount"
-                            class="mt-2 p-2 border rounded w-full pb-5">
-                        <button onclick="donate(1, 0)"
-                            class="mt-2 bg-green-500 text-white font-semibold px-4 py-2 rounded">Donate
-                            Now</button>
-                    </div>
+        <div class="flex ml-96 pt-5 gap-2">
+            <div>
+                <img src="./DOM-Quest-Build-and-Manipulate/assets/coin.png">
+            </div>
+            <div>
+                0 BDT
+            </div>
+        </div>
+
+        <div class="bg-white p-4 shadow-md rounded mb-4">
+            <div class="flex gap-10">
+                <img src="./DOM-Quest-Build-and-Manipulate/assets/feni.png" alt="Flood image"
+                    class="rounded w-80 h-72 object-cover">
+                <div>
+                    <h3 class="font-bold pb-5">Donate for Flood Relief in Feni,Bangladesh</h3>
+                    <p class="text-sm text-gray-600 pb-5">The recent floods in Feni have devastated local
+                        communities, leading to severe disruption and loss. Your generous donation will help provide
+                        immediate aid, including food, clean water, and medical supplies, to those affected by this
+                        calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of
+                        this disaster. Every contribution counts towards making a real difference. Please consider
+                        donating today to assist those in urgent need.</p>
+                    <input id="donation2" type="number" placeholder="Enter Your Donation Amount"
+                        class="mt-2 p-2 border rounded w-full pb-5">
+                    <button onclick="donate(2, 600)"
+                        class="mt-2 bg-green-500 text-white font-semibold px-4 py-2 rounded">Donate
+                        Now</button>
                 </div>
             </div>
         </div>
@@ -118,39 +117,47 @@
         <!-- Donation Card-2 End -->
 
         <!-- Donation Card-3 Start -->
-        <div id="donationSection">
-            <div class="flex ml-96 pt-5 gap-2">
-                <div>
-                    <img src="./DOM-Quest-Build-and-Manipulate/assets/coin.png">
-                </div>
-                <div>
-                    0 BDT
-                </div>
-            </div>
 
-            <div class="bg-white p-4 shadow-md rounded mb-4">
-                <div class="flex gap-10">
-                    <img src="./DOM-Quest-Build-and-Manipulate/assets/quota-protest.png" alt="Quota movement image"
-                        class="rounded w-80 h-72 object-cover">
-                    <div>
-                        <h3 class="font-bold pb-5">Aid for Injured in the Quota Movement</h3>
-                        <p class="text-sm text-gray-600 pb-5">The recent Quota movement has resulted in numerous
-                            injuries and significant hardship for many individuals. Your support is crucial in providing
-                            medical assistance, rehabilitation, and necessary supplies to those affected. By
-                            contributing, you help ensure that injured individuals receive the care and support they
-                            need during this challenging time. Every donation plays a vital role in alleviating their
-                            suffering and aiding in their recovery. Please consider making a donation to support these
-                            brave individuals in their time of need.</p>
-                        <input id="donation1" type="number" placeholder="Write Donation Amount"
-                            class="mt-2 p-2 border rounded w-full pb-5">
-                        <button onclick="donate(1, 0)"
-                            class="mt-2 bg-green-500 text-white font-semibold px-4 py-2 rounded">Donate
-                            Now</button>
-                    </div>
+        <div class="flex ml-96 pt-5 gap-2">
+            <div>
+                <img src="./DOM-Quest-Build-and-Manipulate/assets/coin.png">
+            </div>
+            <div>
+                0 BDT
+            </div>
+        </div>
+
+        <div class="bg-white p-4 shadow-md rounded mb-4">
+            <div class="flex gap-10">
+                <img src="./DOM-Quest-Build-and-Manipulate/assets/quota-protest.png" alt="Quota movement image"
+                    class="rounded w-80 h-72 object-cover">
+                <div>
+                    <h3 class="font-bold pb-5">Aid for Injured in the Quota Movement</h3>
+                    <p class="text-sm text-gray-600 pb-5">The recent Quota movement has resulted in numerous
+                        injuries and significant hardship for many individuals. Your support is crucial in providing
+                        medical assistance, rehabilitation, and necessary supplies to those affected. By
+                        contributing, you help ensure that injured individuals receive the care and support they
+                        need during this challenging time. Every donation plays a vital role in alleviating their
+                        suffering and aiding in their recovery. Please consider making a donation to support these
+                        brave individuals in their time of need.</p>
+                    <input id="donation3" type="number" placeholder="Enter Your Donation Amount"
+                        class="mt-2 p-2 border rounded w-full pb-5">
+                    <button onclick="donate(3, 2400)"
+                        class="mt-2 bg-green-500 text-white font-semibold px-4 py-2 rounded">Donate
+                        Now</button>
                 </div>
             </div>
         </div>
         <!-- Donation Card-3 End -->
+
+        <!-- History Section -->
+        <div id="historySection" class="hidden">
+            <div class="bg-white p-4 shadow-md rounded mb-4">
+                <ul id="historyList" class="list-disc pl-4">
+                    <!-- History items will be added here -->
+                </ul>
+            </div>
+        </div>
 
     </main>
     <script src="./js/index.js"></script>
