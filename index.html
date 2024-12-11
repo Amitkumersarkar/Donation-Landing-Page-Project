@@ -44,39 +44,46 @@
             <button class="btn btn-outline btn-secondary font-semibold">History</button>
         </nav>
     </header>
-    <main>
+    <main id="content" class="p-5">
         <!-- Donation Section Start -->
-        <div class="main-div">
-            <!-- Donation card-1 Start-->
-            <div class="flex justify-center gap-3 mt-5">
+
+        <!-- Donation card-1 Start-->
+        <div id="donationSection">
+            <div class="flex ml-96 pt-5">
                 <div>
-                    <img src="./DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
+                    <img src="./DOM-Quest-Build-and-Manipulate/assets/coin.png">
                 </div>
                 <div>
                     0 BDT
                 </div>
             </div>
 
-            <div class="bg-white p-5 shadow-md rounded-md">
-                <div class="flex gap-5">
-                    <img class="rounded w-80 h-72 object-cover m-20"
-                        src="./DOM-Quest-Build-and-Manipulate/assets/noakhali.png" alt="flood image">
-
+            <div class="bg-white p-4 shadow-md rounded mb-4">
+                <div class="flex gap-10">
+                    <img src="./DOM-Quest-Build-and-Manipulate/assets/noakhali.png" alt="Flood image"
+                        class="rounded w-80 h-72 object-cover">
                     <div>
-                        <h3 class="font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
-                        <p class="text-sm text-gray-600  pt-5"> The recent floods in Noakhali have caused significant damage
+                        <h3 class="font-bold pb-5">Donate for Flood at Noakhali, Bangladesh</h3>
+                        <p class="text-sm text-gray-600 pb-5">The recent floods in Noakhali have caused significant
+                            damage
                             to homes infrastructure. Your donation will help provide essential supplies and to those
                             affected by this disaster. Every contribution, big or small, makes difference. Please join
                             us in supporting the relief efforts and making a positive impact on the lives of those in
                             need.</p>
+                        <input id="donation1" type="number" placeholder="Write Donation Amount"
+                            class="mt-2 p-2 border rounded w-full pb-5">
+                        <button onclick="donate(1, 0)"
+                            class="mt-2 bg-green-500 text-white font-semibold px-4 py-2 rounded">Donate
+                            Now</button>
                     </div>
                 </div>
-
             </div>
-
-            <!-- Donation card-1 End-->
         </div>
+
+        <!-- Donation card-1 End-->
+
         <!-- Donation Section End -->
+
     </main>
     <script src="./js/index.js"></script>
 </body>
