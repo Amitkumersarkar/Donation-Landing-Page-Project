@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="m-7">
+        <nav>
+            <a href="./index.html"><button
+                    class="btn btn-primary text-lg text-white ml-5 mt-5 mb-5 pl-8 pr-8 bg-green-600">
+                    Home</button></a>
+        </nav>
+        <div class="flex gap-5 mt-5 ml-4 text-4xl font-extrabold">
+            <h1>Important FAQ</h1>
+            <div class="w-11 pb-5">
+                <img src="./DOM-Quest-Build-and-Manipulate/assets/info_14424682.png" alt="">
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-extrabold">What Is The Document Object Model ?</div>
+            <div class="collapse-content text-slate-700">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page
+                    so that programs can change the document structure, style, and content. The DOM represents the
+                    document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-extrabold">How Do You Select Element From The Dom ?</div>
+            <div class="collapse-content text-slate-700">
+                <p>
+                    <b>Using getElementById:</b>
+                    The getElementById method allows you to select an element by its ID. This method returns the element
+                    object if it finds an element with the specified ID, otherwise, it returns null. <br>
+                    <br>
+                    <b> Using getElementsByClassName:</b>
+                    The getElementsByClassName method allows you to select elements by their class name. It returns a
+                    collection of all elements in the document with the specified class name.
+                    <br>
+                    <br>
+                    <b> Using getElementsByTagName:</b>
+                    The getElementsByTagName method allows you to select elements by their tag name. It returns a
+                    collection of all elements in the document with the specified tag name.
+                    <br>
+                    <br>
+                    <b> Using querySelector:</b>
+                    The querySelector method allows you to select the first element that matches a specified CSS
+                    selector(s) in the document.
+                </p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-extrabold">How To Create A New DOM Element ?</div>
+            <div class="collapse-content text-slate-700">
+                <p>You can use the createElement method to create a new DOM element. The method takes one parameter: the
+                    tag name of the element.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-extrabold">How To Append A DOM Element To Another DOM Element ?</div>
+            <div class="collapse-content text-slate-700">
+                <p>You can use the appendChild method to append a DOM element to another DOM element.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
